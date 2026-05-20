@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moulie Sankaran S K | Mechatronics Engineer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Canvas for particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <span class="logo-bracket">&lt;</span>skm<span class="logo-bracket">/&gt;</span>
+    </div>
+    <div class="menu-icon" id="menuIcon"><i class="bi bi-list"></i></div>
+    <ul id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="greeting-line">
+          <span class="tag-open">&lt;hello&gt;</span>
+          <span class="greeting-word">It's Me</span>
+          <span class="tag-close">&lt;/hello&gt;</span>
+        </div>
+        <h1 class="hero-name">Moulie<br><span class="name-accent">Sankaran S K</span></h1>
+        <div class="typewriter-wrap">
+          <span class="typewriter-static">I build </span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">Mechatronics Engineer passionate about robotics, IoT systems, and 3D modeling. Turning ideas into intelligent machines.</p>
+        <div class="hero-cta">
+          <a href="Moulie_Sankaran_Resume.pdf" class="btn-primary" download>
+            <i class="bi bi-download"></i> Download CV
+          </a>
+          <a href="#projects" class="btn-outline">View Projects <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/mouliesankaransk0711" target="_blank" class="social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Mouliesankaran" target="_blank" class="social-icon" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://twitter.com/" target="_blank" class="social-icon" title="Twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="social-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit-wrapper">
+          <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+          <div class="img-hexagon">
+            <img src="moulie.JPG" alt="Moulie Sankaran S K" />
+          </div>
+        </div>
+        <div class="floating-badge badge-1">
+          <i class="bi bi-robot"></i> Robotics
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="bi bi-cpu-fill"></i> IoT
+        </div>
+        <div class="floating-badge badge-3">
+          <i class="bi bi-box-seam"></i> 3D Modeling
+        </div>
+        <div class="floating-badge badge-4">
+          <i class="bi bi-diagram-2-fill"></i> PCB Design
+        </div>
+        <div class="floating-badge badge-5">
+          <i class="bi bi-tools"></i> Prototyping
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about reveal">
+    <div class="section-header">
+      <span class="section-tag">01 — About</span>
+      <h2 class="section-title">Who <span class="highlight">Am I?</span></h2>
+    </div>
+    <div class="about-container">
+      <div class="about-img-wrap">
+        <div class="about-img-frame">
+          <img src="moulie.JPG" alt="About Moulie" />
+          <div class="img-decoration"></div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="7">0</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="about-tagline">Mechatronics Engineer & Robotics Enthusiast</p>
+        <p>I am pursuing a <strong>BE in Mechatronics Engineering</strong> at Kongu Engineering College (CGPA – 7.92★). My work spans robotics, 3D modeling, IoT systems, and automation engineering.</p>
+        <p>I'm driven by a mission to create sustainable and intelligent solutions — bridging the gap between mechanical precision and digital intelligence.</p>
+        <div class="about-details">
+          <div class="detail-row"><span class="detail-label"><i class="bi bi-mortarboard-fill"></i> College</span><span>Kongu Engineering College, Erode</span></div>
+          <div class="detail-row"><span class="detail-label"><i class="bi bi-geo-alt-fill"></i> Location</span><span>Vairapalayam, Erode - 638003</span></div>
+          <div class="detail-row"><span class="detail-label"><i class="bi bi-envelope-fill"></i> Email</span><span>mouliesankaran2004@gmail.com</span></div>
+          <div class="detail-row"><span class="detail-label"><i class="bi bi-telephone-fill"></i> Phone</span><span>+91 8870601260</span></div>
+        </div>
+        <div class="about-badges">
+          <span class="badge">Joint Treasurer — Robotics Club KEC</span>
+          <span class="badge">Enthusiastic</span>
+          <span class="badge">Attox Research Labs Intern</span>
+          <span class="badge">Datacorp hardware Intern</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills reveal">
+    <div class="section-header">
+      <span class="section-tag">02 — Skills</span>
+      <h2 class="section-title">My <span class="highlight">Expertise</span></h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal-card">
+        <div class="skill-icon-wrap"><i class="bi bi-robot"></i></div>
+        <h3>Robotics & Automation</h3>
+        <p>Design and prototype robotics systems for diverse applications in automation and precision control.</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="88"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal-card">
+        <div class="skill-icon-wrap"><i class="bi bi-box-seam"></i></div>
+        <h3>3D Modeling and printing</h3>
+        <p>Precise 3D modeling using SolidWorks, TinkerCAD, and PrusaSlicer for product development.</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="82"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal-card">
+        <div class="skill-icon-wrap"><i class="bi bi-wifi"></i></div>
+        <h3>IoT & Embedded Systems</h3>
+        <p>Building IoT solutions with ESP32, Arduino, and ESP8266 to solve real-world problems.</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="90"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal-card">
+        <div class="skill-icon-wrap"><i class="bi bi-cpu-fill"></i></div>
+        <h3>Circuit Design</h3>
+        <p>PCB and circuit design using Eagle and Proteus simulation for robust embedded hardware.</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="75"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal-card">
+        <div class="skill-icon-wrap"><i class="bi bi-code-slash"></i></div>
+        <h3>Embedded Programming</h3>
+        <p>Microcontroller programming with Arduino IDE and ESP frameworks for real-time control.</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="85"></div>
+        </div>
+      </div>
+      <div class="skill-card reveal-card">
+        <div class="skill-icon-wrap"><i class="bi bi-lightning-charge-fill"></i></div>
+        <h3>E-Mobility Systems</h3>
+        <p>Designed an electric bike focusing on sustainable and eco-friendly transportation solutions.</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="70"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tools-strip">
+      <span class="tools-label">Tools I use:</span>
+      <div class="tools-list">
+        <span class="tool-tag">Eagle</span>
+        <span class="tool-tag">EasyEDA</span>
+        <span class="tool-tag">Proteus</span>
+        <span class="tool-tag">SolidWorks</span>
+        <span class="tool-tag">PrusaSlicer</span>
+        <span class="tool-tag">Chitubox</span>
+        <span class="tool-tag">TinkerCAD</span>
+        <span class="tool-tag">AutoCAD</span>
+        <span class="tool-tag">Arduino IDE</span>
+        <span class="tool-tag">Wokwi</span>
+        <span class="tool-tag">Blynk</span>
+      </div>
+    </div>
+
+    <div class="tools-strip microcontrollers-strip">
+      <span class="tools-label">Microcontrollers:</span>
+      <div class="tools-list">
+        <span class="tool-tag mc-tag"><i class="bi bi-cpu-fill"></i> ESP32</span>
+        <span class="tool-tag mc-tag"><i class="bi bi-cpu-fill"></i> ESP8266</span>
+        <span class="tool-tag mc-tag"><i class="bi bi-cpu-fill"></i> Arduino Nano</span>
+        <span class="tool-tag mc-tag"><i class="bi bi-cpu-fill"></i> Arduino Uno</span>
+        <span class="tool-tag mc-tag"><i class="bi bi-motherboard-fill"></i> Raspberry Pi 4</span>
+        <span class="tool-tag mc-tag"><i class="bi bi-gpu-card"></i> Jetson Nano</span>
+        <span class="tool-tag mc-tag"><i class="bi bi-gpu-card"></i> Jetson Orin Nano</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects reveal">
+    <div class="section-header">
+      <span class="section-tag">03 — Projects</span>
+      <h2 class="section-title">What I've <span class="highlight">Built</span></h2>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card reveal-card featured">
+        <div class="project-img">
+          <img src="https://www.azolifesciences.com/images/Article_Images/ImageForArticle_820_16521786758113510.jpg" alt="Robotic Arm" />
+          <div class="project-overlay">
+            <a href="https://github.com/Mouliesankaran/Hand-Gestures-Controlled-Robotic-Arm-using-ESP-NOW" target="_blank" class="overlay-btn"><i class="bi bi-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-tag">ESP32</span>
+            <span class="project-tag">Bluetooth</span>
+            <span class="project-tag">Robotics</span>
+          </div>
+          <h3>Hand Gestures Controlled Robotic Arm</h3>
+          <p>Robotic arm controlled by hand gestures via ESP32 Bluetooth. Real-time, precise and intuitive movements with wireless control.</p>
+          <div class="project-year">May 2025 · KEC Erode</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="project-img">
+          <img src="https://i.ytimg.com/vi/rejZmqRrKMc/sddefault.jpg" alt="RC Car" />
+          <div class="project-overlay">
+            <a href="https://github.com/Mouliesankaran/Hand-Gestures-controlled-RC-Car" target="_blank" class="overlay-btn"><i class="bi bi-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-tag">ESP-NOW</span>
+            <span class="project-tag">Wireless</span>
+            <span class="project-tag">IoT</span>
+          </div>
+          <h3>Gesture Controlled RC Car</h3>
+          <p>ESP-NOW based hand gesture control for smooth, wireless RC car operation with real-time response.</p>
+          <div class="project-year">April 2025 · KEC Erode</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="project-img">
+          <img src="https://airth.in/cdn/shop/files/36.png?v=1699362862" alt="AQI System" />
+          <div class="project-overlay">
+            <a href="https://github.com/Mouliesankaran/AQI-Based-Smart-System" target="_blank" class="overlay-btn"><i class="bi bi-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-tag">ESP8266</span>
+            <span class="project-tag">Blynk</span>
+            <span class="project-tag">Sensors</span>
+          </div>
+          <h3>AQI-Based Smart System</h3>
+          <p>Real-time air quality monitoring measuring temperature, humidity and gas levels — live data via mobile app.</p>
+          <div class="project-year">Nov 2023 · KEC Erode</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="project-img small-img">
+          <div class="project-icon-bg"><i class="bi bi-droplet-fill"></i></div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn"><i class="bi bi-eye"></i> Details</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-tag">Sensors</span>
+            <span class="project-tag">Water Quality</span>
+            <span class="project-tag">Health</span>
+          </div>
+          <h3>Residual Chlorine Testing Kit</h3>
+          <p>Portable on-site kit for measuring residual chlorine levels at water delivery points for public health compliance.</p>
+          <div class="project-year">May 2025 · KEC Erode</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="project-img small-img">
+          <div class="project-icon-bg ebike"><i class="bi bi-lightning-charge-fill"></i></div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn"><i class="bi bi-eye"></i> Details</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-tag">E-Mobility</span>
+            <span class="project-tag">Sustainable</span>
+          </div>
+          <h3>Electric Bike (E-Bike)</h3>
+          <p>Designed and developed an electric bike encouraging sustainable, efficient, and eco-friendly urban transportation.</p>
+          <div class="project-year">Nov 2024 · IES University, Bhopal</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="project-img small-img">
+          <div class="project-icon-bg peanut"><i class="bi bi-diagram-3-fill"></i></div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn"><i class="bi bi-eye"></i> Details</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-tag">Automation</span>
+            <span class="project-tag">Agriculture</span>
+          </div>
+          <h3>Rapid Peanut Dryer</h3>
+          <p>Automatic rapid peanut dryer integrating automation for improved efficiency and reduced drying time.</p>
+          <div class="project-year">Nov 2023 · Anna University, CBE</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications & Activities Section -->
+  <section id="certifications" class="certifications reveal">
+    <div class="section-header">
+      <span class="section-tag">04 — Certifications & Activities</span>
+      <h2 class="section-title">Achievements & <span class="highlight">Recognition</span></h2>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="cert-tabs">
+      <button class="cert-tab active" data-filter="all">All</button>
+      <button class="cert-tab" data-filter="certification">Certifications</button>
+      <button class="cert-tab" data-filter="competition">Competitions</button>
+      <button class="cert-tab" data-filter="internship">Internships</button>
+    </div>
+
+    <div class="cert-grid" id="certGrid">
+
+      <!-- CSWA Certification -->
+      <div class="cert-card reveal-card" data-category="certification">
+        <div class="cert-img-wrap" onclick="openLightbox('cert-cswa')">
+          <img src="cswa-certificate.jpg" alt="CSWA Certification" id="cert-cswa"
+               onerror="this.parentElement.classList.add('no-img')" />
+          <div class="cert-img-placeholder"><i class="bi bi-patch-check-fill"></i></div>
+          <div class="cert-zoom"><i class="bi bi-zoom-in"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-type-badge cert-blue"><i class="bi bi-patch-check-fill"></i> Certification</div>
+          <h3>CSWA — Certified SolidWorks Associate</h3>
+          <p>Official certification from Dassault Systèmes validating proficiency in SolidWorks 3D CAD modeling and design.</p>
+          <div class="cert-issuer"><i class="bi bi-building"></i> Dassault Systèmes · SolidWorks</div>
+        </div>
+      </div>
+
+      <!-- Competition 1 — Placeholder, update title/year/image -->
+      <div class="cert-card reveal-card" data-category="competition">
+        <div class="cert-img-wrap" onclick="openLightbox('cert-comp1')">
+          <img src="competition1-certificate.jpg" alt="Competition Certificate" id="cert-comp1"
+               onerror="this.parentElement.classList.add('no-img')" />
+          <div class="cert-img-placeholder"><i class="bi bi-trophy-fill"></i></div>
+          <div class="cert-zoom"><i class="bi bi-zoom-in"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-type-badge cert-gold"><i class="bi bi-trophy-fill"></i> Competition</div>
+          <h3>Competition Win — Title Here</h3>
+          <p>Replace this description and update <code>competition1-certificate.jpg</code> in your repo folder.</p>
+          <div class="cert-issuer"><i class="bi bi-geo-alt-fill"></i> Organiser · Year</div>
+        </div>
+      </div>
+
+      <!-- Competition 2 -->
+      <div class="cert-card reveal-card" data-category="competition">
+        <div class="cert-img-wrap" onclick="openLightbox('cert-comp2')">
+          <img src="competition2-certificate.jpg" alt="Competition Certificate" id="cert-comp2"
+               onerror="this.parentElement.classList.add('no-img')" />
+          <div class="cert-img-placeholder"><i class="bi bi-trophy-fill"></i></div>
+          <div class="cert-zoom"><i class="bi bi-zoom-in"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-type-badge cert-gold"><i class="bi bi-trophy-fill"></i> Competition</div>
+          <h3>Competition Win — Title Here</h3>
+          <p>Replace this description and update <code>competition2-certificate.jpg</code> in your repo folder.</p>
+          <div class="cert-issuer"><i class="bi bi-geo-alt-fill"></i> Organiser · Year</div>
+        </div>
+      </div>
+
+      <!-- Attox Internship -->
+      <div class="cert-card reveal-card" data-category="internship">
+        <div class="cert-img-wrap" onclick="openLightbox('cert-attox')">
+          <img src="attox-internship.jpg" alt="Attox Internship Certificate" id="cert-attox"
+               onerror="this.parentElement.classList.add('no-img')" />
+          <div class="cert-img-placeholder"><i class="bi bi-briefcase-fill"></i></div>
+          <div class="cert-zoom"><i class="bi bi-zoom-in"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-type-badge cert-purple"><i class="bi bi-briefcase-fill"></i> Internship</div>
+          <h3>Intern — Attox Research Laboratories</h3>
+          <p>Focused on completing the Micro+ prototype under Director Suganth Murugaraj. April 2024 onwards.</p>
+          <div class="cert-issuer"><i class="bi bi-building"></i> Attox Research Labs · 2024</div>
+        </div>
+      </div>
+
+      <!-- Datacorp Internship -->
+      <div class="cert-card reveal-card" data-category="internship">
+        <div class="cert-img-wrap" onclick="openLightbox('cert-attox')">
+          <img src="datacorp-internship.jpg" alt="Datacorp Internship Certificate" id="cert-attox"
+               onerror="this.parentElement.classList.add('no-img')" />
+          <div class="cert-img-placeholder"><i class="bi bi-briefcase-fill"></i></div>
+          <div class="cert-zoom"><i class="bi bi-zoom-in"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-type-badge cert-purple"><i class="bi bi-briefcase-fill"></i> Internship</div>
+          <h3>Intern — Datacorp Engineering Innovations Pvt Ltd</h3>
+          <p>•	Worked on robotics hardware prototyping and development for AGV/AMR systems under the guidance of Director Arun Prasath, gaining hands-on experience in robotic system architecture and integration.</p>
+          <div class="cert-issuer"><i class="bi bi-building"></i> Datacorp Engineering Innovations· 2026</div>
+        </div>
+      </div>
+
+      <!-- Cogent Automation Internship -->
+      <div class="cert-card reveal-card" data-category="internship">
+        <div class="cert-img-wrap" onclick="openLightbox('cert-cogent')">
+          <img src="cogent-internship.jpg" alt="Cogent Automation Certificate" id="cert-cogent"
+               onerror="this.parentElement.classList.add('no-img')" />
+          <div class="cert-img-placeholder"><i class="bi bi-briefcase-fill"></i></div>
+          <div class="cert-zoom"><i class="bi bi-zoom-in"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-type-badge cert-purple"><i class="bi bi-briefcase-fill"></i> In-Plant Training</div>
+          <h3>In-Plant Training — Cogent Automation Pvt Ltd</h3>
+          <p>5-day industrial training at Cogent Automation Pvt Ltd, Coimbatore, gaining hands-on automation experience.</p>
+          <div class="cert-issuer"><i class="bi bi-building"></i> Cogent Automation, Coimbatore · May 2024</div>
+        </div>
+      </div>
+
+      <!-- Sri Vela Internship -->
+      <div class="cert-card reveal-card" data-category="internship">
+        <div class="cert-img-wrap" onclick="openLightbox('cert-srivela')">
+          <img src="srivela-internship.jpg" alt="Sri Vela Smelters Certificate" id="cert-srivela"
+               onerror="this.parentElement.classList.add('no-img')" />
+          <div class="cert-img-placeholder"><i class="bi bi-briefcase-fill"></i></div>
+          <div class="cert-zoom"><i class="bi bi-zoom-in"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-type-badge cert-purple"><i class="bi bi-briefcase-fill"></i> In-Plant Training</div>
+          <h3>In-Plant Training — Sri Vela Smelters Pvt Ltd</h3>
+          <p>10-day industrial training at Sri Vela Smelters Pvt Ltd, Namakkal, exploring manufacturing processes.</p>
+          <div class="cert-issuer"><i class="bi bi-building"></i> Sri Vela Smelters, Namakkal · Dec 2023</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- How to add certificates note -->
+    <div class="cert-instructions">
+      <i class="bi bi-info-circle-fill"></i>
+      <span>To display your certificate images: add your <code>.jpg</code> / <code>.png</code> files to the same GitHub repo folder and rename them to match the filenames above (e.g. <code>cswa-certificate.jpg</code>). They will automatically appear here.</span>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img src="" alt="Certificate" id="lightboxImg" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact reveal">
+    <div class="section-header">
+      <span class="section-tag">05 — Contact</span>
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+    </div>
+    <div class="contact-container">
+      <div class="contact-left">
+        <p class="contact-intro">I'm always open to discussing new opportunities, collaborative projects, or innovative ideas in mechatronics and automation.</p>
+        <div class="contact-items">
+          <a href="mailto:mouliesankaran2004@gmail.com" class="contact-item">
+            <div class="icon-circle"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <strong>Email</strong>
+              <p>mouliesankaran2004@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+918870601260" class="contact-item">
+            <div class="icon-circle"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 8870601260</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/mouliesankaransk0711" target="_blank" class="contact-item">
+            <div class="icon-circle"><i class="bi bi-linkedin"></i></div>
+            <div>
+              <strong>LinkedIn</strong>
+              <p>mouliesankaransk0711</p>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="icon-circle"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <strong>Location</strong>
+              <p>Vairapalayam, Erode - 638003</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="contact-form" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required />
+            <label for="name">Your full name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">Email address</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder=" " rows="5" required></textarea>
+            <label for="message">Your message</label>
+          </div>
+          <button type="submit" class="btn-send">
+            <span>Send Message</span>
+            <i class="bi bi-send-fill"></i>
+          </button>
+          <p class="form-success" id="formSuccess">✓ Message sent successfully!</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo-bracket">&lt;</span>skm<span class="logo-bracket">/&gt;</span>
+      <p>Designed & Built by Moulie Sankaran S K · 2025</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/mouliesankaransk0711" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Mouliesankaran" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Particle Canvas ──────────────────────────────────────────
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    class Particle {
+      constructor() { this.reset(); }
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 1.5 + 0.3;
+        this.speedX = (Math.random() - 0.5) * 0.3;
+        this.speedY = (Math.random() - 0.5) * 0.3;
+        this.opacity = Math.random() * 0.5 + 0.1;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 224, 255, ${this.opacity})`;
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < 120; i++) particles.push(new Particle());
+
+    function drawLines() {
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 100) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(0, 224, 255, ${0.08 * (1 - dist / 100)})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => { p.update(); p.draw(); });
+      drawLines();
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // ── Custom Cursor ──────────────────────────────────────────
+    const dot = document.querySelector('.cursor-dot');
+    const ring = document.querySelector('.cursor-ring');
+    let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      dot.style.left = mouseX + 'px';
+      dot.style.top = mouseY + 'px';
+    });
+
+    function animateCursor() {
+      ringX += (mouseX - ringX) * 0.12;
+      ringY += (mouseY - ringY) * 0.12;
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => ring.classList.add('hover'));
+      el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
+    });
+
+    // ── Navbar scroll ──────────────────────────────────────────
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ── Mobile Menu ──────────────────────────────────────────
+    document.getElementById('menuIcon').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('show');
+    });
+
+    // ── Typewriter ──────────────────────────────────────────
+    const words = ['Robotic Arms.', 'IoT Systems.', '3D Models.', 'Smart Sensors.', 'Electric Vehicles.', 'Mini Projects.', 'Autonomous Vehicles.', 'Prototypes.'];
+    let wi = 0, ci = 0, deleting = false;
+    const tw = document.getElementById('typewriter');
+
+    function type() {
+      const word = words[wi];
+      tw.textContent = deleting ? word.substring(0, ci--) : word.substring(0, ci++);
+      if (!deleting && ci > word.length) { deleting = true; setTimeout(type, 1500); return; }
+      if (deleting && ci < 0) { deleting = false; wi = (wi + 1) % words.length; ci = 0; }
+      setTimeout(type, deleting ? 60 : 100);
+    }
+    type();
+
+    // ── Scroll Reveal ──────────────────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal, .reveal-card');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // ── Skill Bars ──────────────────────────────────────────
+    const barObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const bar = e.target.querySelector('.skill-bar');
+          if (bar) bar.style.width = bar.dataset.width + '%';
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.skill-card').forEach(c => barObs.observe(c));
+
+    // ── Counter ──────────────────────────────────────────
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          document.querySelectorAll('.stat-num').forEach(el => {
+            const target = parseInt(el.dataset.count);
+            let count = 0;
+            const step = () => {
+              count++;
+              el.textContent = count === 7 ? '7.92' : count;
+              if (count < target) setTimeout(step, 120);
+            };
+            step();
+          });
+          counterObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    const statsEl = document.querySelector('.about-stats');
+    if (statsEl) counterObs.observe(statsEl);
+
+    // ── Active Nav Link ──────────────────────────────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+      });
+    });
+
+    // ── Contact Form ──────────────────────────────────────────
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const success = document.getElementById('formSuccess');
+      success.style.display = 'block';
+      this.reset();
+      setTimeout(() => success.style.display = 'none', 3000);
+    });
+
+    // ── Cert Filter Tabs ──────────────────────────────────────────
+    document.querySelectorAll('.cert-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.cert-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.cert-card').forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.style.display = match ? '' : 'none';
+          if (match) { card.classList.remove('visible'); setTimeout(() => card.classList.add('visible'), 50); }
+        });
+      });
+    });
+
+    // ── Lightbox ──────────────────────────────────────────
+    function openLightbox(imgId) {
+      const imgEl = document.getElementById(imgId);
+      if (!imgEl || imgEl.naturalWidth === 0) return;
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightboxImg');
+      const lbCap = document.getElementById('lightboxCaption');
+      lbImg.src = imgEl.src;
+      lbCap.textContent = imgEl.alt;
+      lb.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  
+    document.querySelectorAll('.reveal-card').forEach((el, i) => {
+      el.style.transitionDelay = (i % 3) * 0.1 + 's';
+    });
+  </script>
+</body>
+</html>
